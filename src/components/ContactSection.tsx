@@ -55,22 +55,22 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contato" className="py-16 bg-gray-50">
+    <section id="contato" className="py-16 bg-black">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Entre em Contato
           </h2>
-          <p className="text-lg text-gray-600">
+          <p className="text-lg text-gray-300">
             Estamos prontos para atender você e esclarecer suas dúvidas
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Form */}
-          <Card className="shadow-lg">
+          <Card className="shadow-lg bg-gray-900 border border-gray-700">
             <CardContent className="p-6">
-              <h3 className="text-xl font-semibold text-gray-900 mb-6">Envie sua mensagem</h3>
+              <h3 className="text-xl font-semibold text-white mb-6">Envie sua mensagem</h3>
               
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
@@ -81,7 +81,7 @@ const ContactSection = () => {
                     required
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-600 bg-gray-800 text-white rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
                   />
                 </div>
                 
@@ -93,7 +93,7 @@ const ContactSection = () => {
                     required
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-600 bg-gray-800 text-white rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
                   />
                 </div>
                 
@@ -105,7 +105,7 @@ const ContactSection = () => {
                     required
                     value={formData.whatsapp}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-600 bg-gray-800 text-white rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
                   />
                 </div>
                 
@@ -117,7 +117,7 @@ const ContactSection = () => {
                     rows={4}
                     value={formData.message}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent resize-none"
+                    className="w-full px-4 py-3 border border-gray-600 bg-gray-800 text-white rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent resize-none"
                   ></textarea>
                 </div>
                 
@@ -134,32 +134,32 @@ const ContactSection = () => {
 
           {/* Contact Information */}
           <div className="space-y-6">
-            <Card className="shadow-lg">
+            <Card className="shadow-lg bg-gray-900 border border-gray-700">
               <CardContent className="p-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-6">Informações de Contato</h3>
+                <h3 className="text-xl font-semibold text-white mb-6">Informações de Contato</h3>
                 
                 <div className="space-y-4">
                   <div className="flex items-start space-x-3">
                     <Phone className="w-5 h-5 text-primary mt-1" />
                     <div>
-                      <p className="font-medium text-gray-900">WhatsApp</p>
-                      <p className="text-gray-600">(19) 99939-1285</p>
+                      <p className="font-medium text-white">WhatsApp</p>
+                      <p className="text-gray-300">(19) 99939-1285</p>
                     </div>
                   </div>
                   
                   <div className="flex items-start space-x-3">
                     <Mail className="w-5 h-5 text-primary mt-1" />
                     <div>
-                      <p className="font-medium text-gray-900">E-mail</p>
-                      <p className="text-gray-600">contato@lodiadvocacia.com.br</p>
+                      <p className="font-medium text-white">E-mail</p>
+                      <p className="text-gray-300">contato@lodiadvocacia.com.br</p>
                     </div>
                   </div>
                   
                   <div className="flex items-start space-x-3">
                     <MapPin className="w-5 h-5 text-primary mt-1" />
                     <div>
-                      <p className="font-medium text-gray-900">Endereço</p>
-                      <p className="text-gray-600">Rua Gal. Luiz F. de Matos, 3338<br />Jardim Roma — Pirassununga/SP</p>
+                      <p className="font-medium text-white">Endereço</p>
+                      <p className="text-gray-300">Rua Gal. Luiz F. de Matos, 3338<br />Jardim Roma — Pirassununga/SP</p>
                     </div>
                   </div>
                 </div>

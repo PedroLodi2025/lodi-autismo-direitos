@@ -7,36 +7,36 @@ const RightsSection = () => {
       icon: <AlertTriangle className="w-8 h-8 text-yellow-600" />,
       title: "Situações que merecem atenção jurídica",
       description: "Identifique quando é necessário buscar orientação legal especializada",
-      bgColor: "bg-yellow-50 border-yellow-200"
+      bgColor: "bg-gray-900 border-yellow-500"
     },
     {
-      icon: <Shield className="w-8 h-8 text-blue-600" />,
+      icon: <Shield className="w-8 h-8 text-blue-400" />,
       title: "Direitos garantidos em lei",
       description: "Conheça os direitos fundamentais que a legislação assegura",
-      bgColor: "bg-blue-50 border-blue-200"
+      bgColor: "bg-gray-900 border-blue-500"
     },
     {
-      icon: <Info className="w-8 h-8 text-purple-600" />,
+      icon: <Info className="w-8 h-8 text-purple-400" />,
       title: "O papel da orientação jurídica",
       description: "Entenda como o acompanhamento técnico pode fazer a diferença",
-      bgColor: "bg-purple-50 border-purple-200"
+      bgColor: "bg-gray-900 border-purple-500"
     },
     {
-      icon: <CheckCircle className="w-8 h-8 text-green-600" />,
+      icon: <CheckCircle className="w-8 h-8 text-green-400" />,
       title: "Agir com informação e segurança",
       description: "A importância de tomar decisões baseadas em conhecimento jurídico",
-      bgColor: "bg-green-50 border-green-200"
+      bgColor: "bg-gray-900 border-green-500"
     }
   ];
 
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-black">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Entenda Seus Direitos
           </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-300 max-w-3xl mx-auto">
             O conhecimento dos seus direitos é fundamental para tomar as melhores decisões em questões jurídicas
           </p>
         </div>
@@ -48,10 +48,10 @@ const RightsSection = () => {
                 <div className="mb-4 flex justify-center">
                   {item.icon}
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                <h3 className="text-lg font-semibold text-white mb-3">
                   {item.title}
                 </h3>
-                <p className="text-gray-600 text-sm">
+                <p className="text-gray-300 text-sm">
                   {item.description}
                 </p>
               </CardContent>
@@ -59,12 +59,12 @@ const RightsSection = () => {
           ))}
         </div>
 
-        <div className="mt-12 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-lg p-8">
+        <div className="mt-12 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-lg p-8 border border-gray-700">
           <div className="text-center">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">
+            <h3 className="text-2xl font-bold text-white mb-4">
               Não espere para conhecer seus direitos
             </h3>
-            <p className="text-lg text-gray-600 mb-6">
+            <p className="text-lg text-gray-300 mb-6">
               O acompanhamento jurídico adequado pode ser decisivo para o sucesso do seu caso
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

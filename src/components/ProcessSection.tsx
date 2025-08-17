@@ -31,13 +31,13 @@ const ProcessSection = () => {
   ];
 
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-black">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Como Funciona o Atendimento
           </h2>
-          <p className="text-lg text-gray-600">
+          <p className="text-lg text-gray-300">
             Processo simples e transparente para cuidar do seu caso
           </p>
         </div>
@@ -45,7 +45,7 @@ const ProcessSection = () => {
         <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-6">
           {steps.map((step, index) => (
             <div key={index} className="relative">
-              <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 bg-white h-full">
+              <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 bg-gray-900 border border-gray-700 h-full">
                 <CardContent className="p-6 text-center">
                   <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                     {step.icon}
@@ -53,10 +53,10 @@ const ProcessSection = () => {
                   <div className="absolute -top-3 -left-3 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold">
                     {index + 1}
                   </div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                  <h3 className="text-lg font-semibold text-white mb-3">
                     {step.title}
                   </h3>
-                  <p className="text-gray-600 text-sm">
+                  <p className="text-gray-300 text-sm">
                     {step.description}
                   </p>
                 </CardContent>

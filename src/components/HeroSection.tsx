@@ -3,16 +3,16 @@ import { Button } from "@/components/ui/button";
 const HeroSection = () => {
   return (
     <section id="inicio" className="relative min-h-screen flex items-center justify-center bg-black">
-      {/* Background image with transparency */}
+      {/* Background image with more visibility */}
       <div 
-        className="absolute inset-0 bg-cover bg-center opacity-30"
+        className="absolute inset-0 bg-cover bg-center opacity-60"
         style={{
           backgroundImage: "url('/lovable-uploads/f46ddb13-f3bf-4de0-9f0e-629333a42b45.png')"
         }}
       ></div>
       
       {/* Dark overlay for better text readability */}
-      <div className="absolute inset-0 bg-black/60"></div>
+      <div className="absolute inset-0 bg-black/40"></div>
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
