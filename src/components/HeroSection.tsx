@@ -2,17 +2,17 @@ import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
   return (
-    <section id="inicio" className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
-      {/* Background overlay */}
-      <div className="absolute inset-0 bg-black/40"></div>
-      
-      {/* Background image with low opacity */}
+    <section id="inicio" className="relative min-h-screen flex items-center justify-center bg-black">
+      {/* Background image with transparency */}
       <div 
-        className="absolute inset-0 bg-cover bg-center opacity-20"
+        className="absolute inset-0 bg-cover bg-center opacity-30"
         style={{
-          backgroundImage: "url('data:image/svg+xml,%3Csvg xmlns=\"http://www.w3.org/2000/svg\" width=\"1920\" height=\"1080\" viewBox=\"0 0 1920 1080\"%3E%3Crect width=\"1920\" height=\"1080\" fill=\"%23f3f4f6\"/%3E%3Ctext x=\"960\" y=\"540\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"serif\" font-size=\"48\" fill=\"%23374151\" opacity=\"0.3\"%3EAdvocacia%3C/text%3E%3C/svg%3E')"
+          backgroundImage: "url('/lovable-uploads/f46ddb13-f3bf-4de0-9f0e-629333a42b45.png')"
         }}
       ></div>
+      
+      {/* Dark overlay for better text readability */}
+      <div className="absolute inset-0 bg-black/60"></div>
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
