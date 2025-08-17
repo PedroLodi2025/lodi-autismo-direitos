@@ -9,19 +9,16 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 bg-black shadow-sm z-50">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          {/* Logo and Attorney Info */}
-          <div className="flex items-center space-x-4">
+          {/* Logo and Attorney Info - Use complete header image */}
+          <div className="flex items-center">
             <img 
-              src="/logo-lodi.png" 
-              alt="Lodi Advocacia" 
+              src="/logo-header.png" 
+              alt="Dr. Pedro H M Lodi - Lodi Advocacia OAB/SP 210428" 
               className="h-12 w-auto"
               onError={(e) => {
-                e.currentTarget.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='40' viewBox='0 0 120 40'%3E%3Ctext x='10' y='25' font-family='serif' font-size='18' font-weight='bold' fill='%23C41E3A'%3ELodi Advocacia%3C/text%3E%3C/svg%3E";
+                e.currentTarget.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='40' viewBox='0 0 300 40'%3E%3Crect width='300' height='40' fill='%23000'/%3E%3Ctext x='10' y='25' font-family='serif' font-size='16' font-weight='bold' fill='%23FFD700'%3EDr. Pedro H M Lodi - LODI ADVOCACIA OAB/SP 210428%3C/text%3E%3C/svg%3E";
               }}
             />
-            <div className="hidden md:block">
-              <p className="text-white text-sm font-medium">Pedro H M Lodi - Lodi Advocacia - OAB/SP 210.428</p>
-            </div>
           </div>
 
           {/* Desktop Navigation */}
@@ -63,9 +60,6 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t border-gray-700">
             <div className="flex flex-col space-y-4">
-              <div className="md:hidden mb-4">
-                <p className="text-white text-xs">Pedro H M Lodi - Lodi Advocacia - OAB/SP 210.428</p>
-              </div>
               <a href="#inicio" className="text-white hover:text-secondary transition-colors">Início</a>
               <a href="#sobre" className="text-white hover:text-secondary transition-colors">Sobre</a>
               <div className="pl-4 space-y-2">
