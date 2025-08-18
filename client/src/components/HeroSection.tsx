@@ -50,19 +50,19 @@ const HeroSection = () => {
 
           {/* Video Area */}
           <div className="bg-gray-800/50 rounded-lg p-8 backdrop-blur-sm border border-gray-700">
-            <div className="aspect-video bg-gray-700 rounded-lg flex items-center justify-center mb-4">
-              <div className="text-center text-gray-300">
-                <div className="w-16 h-16 mx-auto mb-4 bg-primary rounded-full flex items-center justify-center">
-                  <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
-                  </svg>
-                </div>
-                <p className="text-sm">Vídeo do Dr. Pedro Lodi</p>
-                <p className="text-xs text-gray-400">sobre BPC LOAS para crianças com autismo</p>
-              </div>
+            <div className="aspect-video bg-gray-700 rounded-lg overflow-hidden mb-4">
+              <iframe
+                src="https://www.youtube.com/embed/NYaBsJtV4x0"
+                title="Vídeo do Dr. Pedro Lodi sobre BPC LOAS para crianças com autismo"
+                className="w-full h-full"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+                data-testid="hero-video-iframe"
+              ></iframe>
             </div>
             <p className="text-center text-gray-300 text-sm">
-              Assista ao vídeo explicativo sobre como garantir os direitos do seu filho
+              Assista ao vídeo explicativo do Dr. Pedro Lodi sobre como garantir os direitos do seu filho
             </p>
           </div>
         </div>
